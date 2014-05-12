@@ -1,5 +1,5 @@
 module RedisLogstash
-  class Logger::Socket
+  class Socket
 
     @@socket = nil
 
