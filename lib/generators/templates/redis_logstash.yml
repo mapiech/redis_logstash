@@ -1,0 +1,7 @@
+development:
+  redis:
+    host: 'localhost'
+    port: 6379
+    password: ''
+    key: 'logstash'
+    type: 'rails-custom-logs'
