@@ -5,3 +5,7 @@ development:
     password: ''
     key: 'logstash'
     type: 'rails-custom-logs'
+  logs:
+    truncate:
+      enabled: true
+      length: 10

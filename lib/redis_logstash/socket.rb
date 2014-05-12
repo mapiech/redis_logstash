@@ -30,10 +30,7 @@ module RedisLogstash
 
     def push(json)
       begin
-
-        puts "#{{type: options[:type], message: json.to_json}.to_json}"
-
-        unless redis.rpush(redis_key, {type: options[:type], message: json.to_json}.to_json)
+        unless redis.rpush(redis_key, Logger.gzip({type: options[:type], logs: json.to_json}.to_json))
           raise "could not send event to redis"
         end
       rescue ::Redis::InheritedError

@@ -1,4 +1,7 @@
 require 'redis'
+require 'zlib'
+require 'stringio'
+require 'json'
 
 require "redis_logstash/version"
 require 'redis_logstash/logger'
