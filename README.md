@@ -16,10 +16,9 @@ Or install it yourself as:
 
     $ gem install redis_logstash
 
-## Usage
-
-Run rails g redis_logstash to generate redis_logstash.yml config file.
-Then set your redis credentials
+Generate config file
+    $ rails g redis_logstash
+and set your redis credentials.
 
 ## Contributing
 
